@@ -240,3 +240,32 @@
  #slide-12 .story-cards strong{font-size:clamp(15px,4vw,19px)}
  #slide-12 .story-cards span{font-size:8px}
 }
+
+
+/* V11: all symbols rendered as SVG / CSS; prevents iOS Safari emoji substitution. */
+.ui-icon{display:inline-block;vertical-align:-.15em;width:1.15em;height:1.15em;flex:none;stroke:currentColor;fill:none}
+.orb-icon .ui-icon{width:27px;height:27px;vertical-align:middle}
+.spark-large.brand-spark{position:absolute;right:4%;top:1%;width:min(37vw,530px);height:min(37vw,530px);font-size:0;line-height:0;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(34,235,204,.07),transparent 54%);animation:none;pointer-events:none;z-index:0}
+.spark-large.brand-spark:after{content:'';position:absolute;inset:14%;background:repeating-conic-gradient(from 0deg,rgba(42,235,200,.15) 0deg 3deg,transparent 3deg 45deg);mask-image:radial-gradient(circle,transparent 0 27%,#000 29% 60%,transparent 62%);border-radius:50%;animation:spin 45s linear infinite}
+.closing:before{content:''!important;width:60vw;height:60vw;right:-8vw;top:-15vh;border:1px solid rgba(41,235,200,.08);border-radius:50%;box-shadow:0 0 0 90px rgba(41,235,200,.025);font-size:0;animation:none}
+.prepared-by{margin-top:22px;color:#9fbcca;font:700 10px var(--font);letter-spacing:.2em;line-height:1.5}
+#slide-1 .opening p{max-width:760px}
+#slide-1 .opening h1{font-size:clamp(78px,9.3vw,150px)}
+#slide-1 .opening h2{font-size:clamp(27px,3vw,47px)}
+#slide-1 .opening .cta{margin-top:24px}
+.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.swy-project .project-thumb{background:#f9f9f7;display:flex;align-items:center;justify-content:center;padding:18px}
+.swy-project .project-thumb img{object-fit:contain!important;width:100%;height:100%;filter:none!important}
+.swy-project .project-copy p{font-size:13px}
+.cta .ui-icon{width:18px;height:18px;margin-left:15px}
+.header button .ui-icon,.controls button .ui-icon{width:18px;height:18px}
+@media(max-width:720px){
+ .spark-large.brand-spark{top:15%;right:-24%;width:72vw;height:72vw;opacity:.38}
+ .project-grid{grid-template-columns:1fr;gap:12px}
+ .swy-project .project-thumb{min-height:120px;aspect-ratio:16/8}
+ .prepared-by{font-size:9px;margin-top:16px;letter-spacing:.12em}
+ #slide-1 .opening h1{font-size:clamp(58px,14vw,96px)}
+ #slide-1 .opening h2{font-size:clamp(26px,6.4vw,37px)}
+ #slide-1 .opening p{font-size:14px;line-height:1.5}
+ .header-right{gap:7px}
+}
