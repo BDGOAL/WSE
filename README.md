@@ -55,3 +55,5 @@ You can also drag `index.html` into your browser locally. The deck itself requir
 
 
 V9 updates: fixed BDGOAL orbit layout/caption, removed replay button, improved mobile positioning, and inserted supplied Pricerite/Hang Seng sample screenshots.
+
+V10: Fixed Hang Seng chapter-card overlap on desktop/mobile; compacted Pricerite KPIs and enforced a visible desktop 3-image gallery; removed mouse-wheel and touch-swipe page navigation. Use on-screen arrows to advance.
