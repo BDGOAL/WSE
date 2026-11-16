@@ -36,5 +36,4 @@
   btns.forEach(x=>x.classList.toggle('selected',x===b));
   caption.textContent=meanings[+b.dataset.orbit];
  }));
- document.getElementById('orbitReplay').addEventListener('click',start);
 })();

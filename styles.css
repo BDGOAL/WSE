@@ -120,3 +120,66 @@
 }
 @media(max-width:390px){#slide-7 .headline{font-size:27px}.agency-expanding{--orbitR:100px;width:270px}.agency-expanding .orb.orbit-node{width:64px;height:64px;font-size:7px}.agency-expanding .agency-center{width:86px;height:86px}}
 @media(prefers-reduced-motion:reduce){.agency-expanding .orb.orbit-node,.agency-expanding.agency-floating .orb.orbit-node{animation:none!important}.agency-expanding .agency-center{animation:none!important}}
+
+
+/* V9 — usability + real showcase samples */
+#slide-7 .chapter-copy{max-width:560px}
+#slide-7 .slide-inner{padding-bottom:24px}
+.agency-stage{display:flex;flex-direction:column;align-items:center;gap:16px;width:100%}
+.agency-stage .orbit-info{width:min(100%,560px);padding:14px 18px;border:1px solid rgba(41,235,200,.28);background:linear-gradient(135deg,rgba(12,42,58,.92),rgba(8,27,42,.92));border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.agency-stage .orbit-info small{display:block;font:700 10px var(--font);letter-spacing:.18em;color:var(--teal);margin-bottom:8px}
+.agency-stage .orbit-info .orbit-caption{position:static!important;left:auto!important;top:auto!important;transform:none!important;width:100%!important;min-height:0;color:#d9f7f1;font:700 clamp(11px,1vw,13px)/1.45 var(--font);letter-spacing:.06em;text-align:left}
+.agency-expanding .orbit-replay{display:none!important}
+#slide-7 .agency-expanding{margin-top:8px}
+.work-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start;margin-top:16px}
+.sample-showcase{display:grid;gap:14px;position:relative}
+.pricerite-showcase{grid-template-columns:repeat(3,1fr)}
+.hangseng-showcase{grid-template-columns:repeat(2,1fr)}
+.sample-card{margin:0;border:1px solid rgba(73,190,214,.24);border-radius:18px;overflow:hidden;background:#091825;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.sample-card img{display:block;width:100%;height:100%;object-fit:contain;background:#05090e}
+.sample-card.portrait{aspect-ratio:3/5}
+.sample-note{grid-column:1/-1;font:700 10px var(--font);letter-spacing:.16em;color:#92b2c2;text-align:center;margin-top:2px}
+#slide-11 .metric-grid{margin:18px 0 0}
+#slide-11 .work-copy .headline,#slide-12 .work-copy .headline{max-width:720px}
+#slide-12 .work-layout{grid-template-columns:.88fr 1.12fr}
+#slide-12 .story-cards{margin-top:18px;min-height:auto}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.project-card{border:1px solid var(--line);background:linear-gradient(135deg,rgba(18,48,68,.92),rgba(8,25,39,.9));overflow:hidden;border-radius:18px;display:flex;flex-direction:column;min-height:312px}
+.project-thumb{aspect-ratio:16/10;background:#07131f;overflow:hidden}
+.project-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.project-copy{padding:15px 16px 17px}
+.project-copy small{display:block;font:700 9px var(--font);letter-spacing:.18em;color:var(--teal)}
+.project-copy strong{display:block;font:700 19px var(--font);margin:9px 0 8px;letter-spacing:-.03em}
+.project-copy p{margin:0;color:#abc0cd;font-size:13px;line-height:1.45}
+#slide-13 .footnote{max-width:960px}
+@media(min-width:900px){
+ #slide-7 .two-cols.chapter{grid-template-columns:.95fr 1.05fr;gap:3.8vw;align-items:center}
+ #slide-7 .agency-expanding{--orbitR:clamp(105px,11.2vw,166px);width:min(100%,430px)}
+ #slide-7 .agency-expanding .agency-center{width:132px;height:132px}
+ #slide-7 .agency-expanding .orb.orbit-node{width:92px;height:92px;font-size:10px}
+ #slide-7 .slide-label{bottom:24px}
+}
+@media(max-width:1050px){
+ .work-layout{grid-template-columns:1fr;gap:16px}
+ .project-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:720px){
+ #slide-7 .slide-inner{padding-bottom:56px}
+ .agency-stage{gap:12px}
+ #slide-7 .agency-expanding{width:min(88vw,318px);--orbitR:clamp(88px,24vw,118px);margin:4px auto 0}
+ #slide-7 .agency-expanding .agency-center{width:82px;height:82px;left:50%;top:50%;transform:translate(-50%,-50%)}
+ #slide-7 .agency-expanding .agency-center strong{font-size:18px}
+ #slide-7 .agency-expanding .agency-center small{font-size:5px;margin-top:4px}
+ #slide-7 .agency-expanding .orb.orbit-node{width:58px;height:58px;font-size:7px;gap:2px}
+ #slide-7 .agency-expanding .orb-icon{font-size:15px}
+ .agency-stage .orbit-info{padding:11px 12px;border-radius:12px}
+ .agency-stage .orbit-info small{font-size:8px;margin-bottom:6px}
+ .agency-stage .orbit-info .orbit-caption{font-size:9px;line-height:1.4}
+ .pricerite-showcase{grid-template-columns:1fr}
+ .hangseng-showcase{grid-template-columns:1fr}
+ .sample-card.portrait{aspect-ratio:auto}
+ .sample-card img{height:auto;object-fit:contain}
+ .project-grid{grid-template-columns:1fr;gap:12px}
+ .project-card{min-height:0}
+ .project-thumb{aspect-ratio:16/9}
+}

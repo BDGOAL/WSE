@@ -52,3 +52,6 @@ You can also drag `index.html` into your browser locally. The deck itself requir
 - Desktop photo treatment: eliminated stray floating corner thumbnails, retained intentional editorial images, adjusted dominant photo placement.
 - 19-slide narrative and other interactions remain intact.
 - Reduced-motion system preference supported.
+
+
+V9 updates: fixed BDGOAL orbit layout/caption, removed replay button, improved mobile positioning, and inserted supplied Pricerite/Hang Seng sample screenshots.
