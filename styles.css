@@ -269,3 +269,53 @@
  #slide-1 .opening p{font-size:14px;line-height:1.5}
  .header-right{gap:7px}
 }
+
+/* V12: targeted mobile layout and image composition repairs */
+/* Safari: eliminate decorative rules crossing the opening headline */
+#slide-1 .opening h1,#slide-1 .opening h2{border:0!important;outline:0!important;text-decoration:none!important;background-image:none!important}
+#slide-1 .opening h1::before,#slide-1 .opening h1::after,#slide-1 .opening h2::before,#slide-1 .opening h2::after{content:none!important}
+#slide-1 .hero-photo{pointer-events:none}
+#slide-1 .hero-photo figcaption{display:none}
+/* The old inset:auto declaration reset left/top after they were set. Anchor both axes explicitly. */
+#slide-4 .agency-expanding .agency-center{inset:auto!important;left:50%!important;top:50%!important;right:auto!important;bottom:auto!important;transform:translate(-50%,-50%)!important}
+#slide-4 .agency-expanding{position:relative!important}
+#slide-4 .orbit-nodes{position:absolute!important;inset:0!important}
+#slide-4 .orb.orbit-node{left:50%!important;top:50%!important}
+/* Keep photos focused on faces; do not crop actual campaign screenshots */
+.editorial-photo img,.audience-img img{object-fit:cover;object-position:50% 25%}
+.hero-photo img{object-position:50% 18%!important}
+.side-photo img,.closing-photo img{object-position:50% 20%!important}
+.landscape-photo img{object-position:50% 22%!important}
+.audience .photo-tile .audience-img img{object-position:50% 16%!important}
+.case-photo img{object-position:50% 18%!important}
+.sample-card img,.project-thumb img[src*="pricerite"],.project-thumb img[src*="hangseng"],.project-thumb img[src*="swy"]{object-fit:contain!important;object-position:center!important}
+@media(min-width:900px){
+ .hero-photo img{object-position:50% 16%!important}
+ .editorial-photo:not(.hero-photo) img{object-position:50% 20%}
+ #slide-7 .process-tiles{align-items:stretch}
+ #slide-7 .process-tiles .tile{min-height:185px;padding:20px}
+}
+@media(max-width:720px){
+ /* Landing: photo stays behind text, and the photo caption cannot cross copy. */
+ #slide-1 .hero-photo{top:5%;right:-13%;width:82%;height:45%;opacity:.40;mask-image:linear-gradient(90deg,transparent,black 42%)}
+ #slide-1 .opening{position:relative;z-index:4}
+ #slide-1 .opening h1{line-height:.94;max-width:100%}
+ #slide-1 .slide-inner{padding-top:16px}
+ /* Center the actual BDGOAL core within the mobile orbit; reserve breathing room around nodes. */
+ #slide-4 .two-cols.chapter{gap:12px!important}
+ #slide-4 .chapter-copy{margin-bottom:4px}
+ #slide-4 .agency-stage{width:100%;padding:0 3px}
+ #slide-4 .agency-expanding{--orbitR:clamp(86px,25.5vw,113px);width:min(85vw,305px)!important;aspect-ratio:1;margin:6px auto 3px!important}
+ #slide-4 .agency-expanding .agency-center{width:80px;height:80px}
+ #slide-4 .agency-expanding .orb.orbit-node{width:clamp(54px,15.4vw,67px);height:clamp(54px,15.4vw,67px)}
+ #slide-4 .orbit-info{margin:0 auto;max-width:340px}
+ /* Eliminate tall empty process cards; content determines height. */
+ #slide-7 .slide-inner{justify-content:flex-start;padding-top:30px}
+ #slide-7 .process-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px;align-items:stretch}
+ #slide-7 .process-tiles .tile{height:auto;min-height:0!important;padding:16px 13px 18px;display:flex;flex-direction:column;justify-content:flex-start}
+ #slide-7 .process-tiles .tile .tile-icon{margin:0 0 13px}
+ #slide-7 .process-tiles .tile h3{font-size:clamp(12px,3vw,16px);line-height:1.3;margin:0 0 10px}
+ #slide-7 .process-tiles .tile p{font-size:clamp(11px,2.7vw,13px);line-height:1.5}
+ #slide-7 .marquee{margin-top:16px}
+ #slide-7 .headline{font-size:clamp(30px,7.5vw,43px)}
+}
