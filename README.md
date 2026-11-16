@@ -20,3 +20,5 @@ Use visible left/right arrows or keyboard arrow keys, and tap on interaction car
 Pricerite and Hang Seng campaign captures are displayed as supplied (unaltered image data). SWY logo file is also included unmodified. Other editorial photos are concepts, not verified client artwork.
 
 V12: fixed orbit center positioning, condensed mobile process cards, removed overlapping hero caption / decorative line treatments, adjusted photo focal points, preserved screenshots with contain.
+
+V13: Renumbered all slide eyebrows to match the 16-slide sequence. Refined Slide 5 into an interactive capability board and focus panel, and raised body-text sizing across desktop/mobile.
