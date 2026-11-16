@@ -39,3 +39,9 @@ You can also drag `index.html` into your browser locally. The deck itself requir
 - SleekFlow/CRM/WhatsApp integrations are illustrative and depend on actual platform availability, technical feasibility and privacy requirements.
 
 © BDGOAL — Concept pitch.
+
+
+## Visual update v7
+- Locally bundled AI-generated conceptual photography in `/assets` (no external image hosting required).
+- Editorial blockquotes, title/subtitle hierarchy, image-driven sections, reduced copy density.
+- Images are illustrative; they are **not** photographs of actual WSE students, staff, campus or client work. Replace with approved brand / case-study photography before publishing externally.
